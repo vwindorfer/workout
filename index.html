@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="sidebar">
+        <h3>Exercises</h3>
+        <ul>
+            <li><button id="exerciseBtn0" onclick="switchToExercise(0)">Plank mit wechselndem Beinheben</button></li>
+            <li><button id="exerciseBtn1" onclick="switchToExercise(1)">High Plank</button></li>
+            <li><button id="exerciseBtn2" onclick="switchToExercise(2)">Seitenplank mit Knieheben rechts</button></li>
+            <li><button id="exerciseBtn3" onclick="switchToExercise(3)">Seitenplank mit Knieheben links</button></li>
+            <li><button id="exerciseBtn4" onclick="switchToExercise(4)">Mountain Climber</button></li>
+            <li><button id="exerciseBtn5" onclick="switchToExercise(5)">Planks mit Drehung rechts</button></li>
+            <li><button id="exerciseBtn6" onclick="switchToExercise(6)">Planks mit Drehung links</button></li>
+            <li><button id="exerciseBtn7" onclick="switchToExercise(7)">High Plank</button></li>
+        </ul>
+    </div>
+    <main>
+        <h1>Workout Timer</h1>
+        <h2 id="exerciseName"></h2>
+        <p id="activeState"></p>
+        <h3 id="timer"></h3>
+        <button id="startWorkoutBtn" onclick="startWorkout()">Start Workout</button>
+        <button id="pauseContinueBtn" onclick="togglePause()" style="display: none;">Pause Workout</button>
+        <button id="endWorkoutBtn" onclick="endWorkout()" style="display: none;">End Workout</button>
+    </main>
+</body>
+
+</html>
